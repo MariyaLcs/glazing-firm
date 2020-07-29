@@ -14033,6 +14033,12 @@ var modals = function modals() {
       modal.style.display = "none";
       document.body.style.overflow = "";
     });
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "";
+      }
+    });
   }
 
   var callEngineerBtn = document.querySelector(".popup_engineer_btn"),
